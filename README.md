@@ -1,10 +1,10 @@
 # PRAS Videos Downloader
 
-Simple Website/API for downloading instagram videos made with Next.js that actually works with no problem.
+Pras Video Downloader is a simple and efficient tool for downloading videos from various platforms. It provides an easy-to-use interface to download videos for offline viewing.
 
 ## Description
 
-A website that lets you download Instagram videos easily and quickly. You can paste the URL of any public Instagram post and get the video file in MP4 format. there is also an API that you can use to integrate this functionality into your own applications. The API is simple, and it returns JSON responses with the video URL and other metadata.
+A powerful video download tool enabling seamless downloading of videos from YouTube and Instagram Reels. Simply paste the URL of your favorite video, and our tool provides a hassle-free download experience in various formats. We offer an intuitive user interface for quick navigation and high-quality downloads
 
 
 ## Features
@@ -47,18 +47,18 @@ cd PRAS-Video-Downloader
 ```
 
 ### or
+```
+Open install-package.bat file.
+```
 
-### Open install-package.bat File.
 
 
-
-**4.** Starting the server:
+**4.** Start the server:
 
 ```bash
 npm run dev
 ```
 
-##
 
 
 ## License
