@@ -46,7 +46,7 @@ cd PRAS-Video-Downloader
 ./install-package.bat
 ```
 
-## or
+### or
 
 ## Open install-package.bat File.
 
