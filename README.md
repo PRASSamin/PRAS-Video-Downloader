@@ -48,7 +48,7 @@ cd PRAS-Video-Downloader
 
 ## or
 
-### Open install-package.bat File.
+## Open install-package.bat File.
 
 
 **4.** Starting the server:
