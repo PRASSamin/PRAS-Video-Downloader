@@ -1,6 +1,6 @@
 # PRAS Videos Downloader
 
-Pras Video Downloader is a simple and efficient tool for downloading videos from various platforms. It provides an easy-to-use interface to download videos for offline viewing.
+PRAS Video Downloader is a simple and efficient tool for downloading videos from various platforms. It provides an easy-to-use interface to download videos for offline viewing.
 
 ## Description
 
