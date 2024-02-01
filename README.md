@@ -4,7 +4,7 @@ Pras Video Downloader is a simple and efficient tool for downloading videos from
 
 ## Description
 
-A powerful video download tool enabling seamless downloading of videos from YouTube and Instagram Reels. Simply paste the URL of your favorite video, and our tool provides a hassle-free download experience in various formats. We offer an intuitive user interface for quick navigation and high-quality downloads
+A powerful video download tool enabling seamless downloading of videos from YouTube and Instagram Reels. Simply paste the URL of your favorite video, and our tool provides a hassle-free download experience in various formats. We offer an intuitive user interface for quick navigation and high-quality downloads.
 
 
 ## Features
