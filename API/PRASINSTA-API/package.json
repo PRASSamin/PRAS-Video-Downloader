@@ -1,0 +1,43 @@
+{
+  "name": "instagram-videos-downloader",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "pre-commit": "npm run prettier && npm run lint",
+    "test": "jest && del-cli --force ./.swc"
+  },
+  "dependencies": {
+    "@upstash/ratelimit": "^1.0.0",
+    "@upstash/redis": "^1.25.1",
+    "axios": "^1.5.1",
+    "cheerio": "^1.0.0-rc.12",
+    "lodash": "^4.17.21",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/lodash": "^4.14.201",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.16",
+    "clsx": "^2.0.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
+    "postcss": "^8.4.31",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5"
+  }
+}

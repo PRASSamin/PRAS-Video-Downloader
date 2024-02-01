@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" id="ls36">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAS Video Downloader</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/deslap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+
+    <!-- My Github -->
+    <div class="gif-container">
+        <a target="_blank" href="https://github.com/PRASSamin">
+            <img src="img/github black.gif" alt="Your GIF" class="pause-resume-gif" id="gifImage">
+        </a>
+    </div>
+
+    <!-- Pre-Loader -->
+    <div class="loading-screen" id="loadingScreen">
+        <video id="loadingvid" src="video/loadinganim.mp4" preload="auto" autoplay loop muted></video>
+    </div>
+    </div>
+
+    <!-- Webpage BG -->
+    <div id="bg">
+        <canvas hidden></canvas>
+        <canvas></canvas>
+        <canvas></canvas>
+    </div>
+
+    <!-- 20% of the page -->
+    <div id="content">
+        <div id="twoperofpage">
+            <div class="sidenav">
+                <div class="logo-container">
+                    <a style="padding: 0px !important;" href="/home"><img class="logo" src="/img/logo.png"
+                            alt="PRAS Downloader Logo">
+                    </a>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item home">
+                        <a href="/home"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+                    </li>
+                    <li class="toolbox nav-item" id="toolbox">
+                        <button id="toolbox-btn" class="toolbox-btn">
+                            <a style="padding: 0px !important; height: 20px;" id="toolboxmobile">
+                                <i class="fa-solid fa-toolbox"></i>
+                            </a>
+                            <p>Tools &nbsp</p>
+                            <i id="updown" class="fa-solid fa-caret-up"></i>
+                        </button>
+                        <ul class="toolbox-dropdown">
+                            <li id="youtube-tool">
+                                <a href="/tool/youtube-downloader"><i style="font-size: 19px; margin-bottom: -2px;"
+                                        class="fa-brands fa-youtube"></i>Youtube</a>
+                            </li>
+                            <li id="instagram-tool">
+                                <a href="/tool/instagram-downloader"><i class="fa-brands fa-instagram"></i>
+                                    Instagram</a>
+                            </li>
+                            <li hidden id="facebook-tool">
+                                <a href="/facebook-downloader"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                            </li>
+                            <li hidden id="tiktok-tool">
+                                <a href="/tiktok-downloader"><i class="fa-brands fa-tiktok"></i>
+                                    <p>Tiktok</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- 80% of the page -->
+        <div id="eightperofthepage">
+            <div id="spinner">
+                <div class="bubble-1"></div>
+                <div class="bubble-2"></div>
+            </div>
+
+
+
+            <div class="top-floating">
+                <p>Made By PRAS!</p>
+            </div>
+
+            <div id="docContainer">
+                <div id="documentation">
+                    <h1 class="mt-4" style="margin: 0px; font-size: 45px;">Welcome to PRAS Video Downloader</h1>
+                    <h3 class="mt-5" style="font-size: 1.9rem;">Table of Contents</h3>
+                    <div>
+                        <ul style="padding-inline-start: 10px;">
+                            <li class="mt-3"><a href="#Introduction" onclick="scrollT('introduction')">Introduction</a>
+                            </li>
+                            <li class="mt-2"><a href="#Supported-Platforms"
+                                    onclick="scrollT('supported-platforms')">Supported
+                                    Platforms</a></li>
+                            <li class="mt-2"><a href="#How-To-Use" onclick="scrollT('how-to-use')">How to Use</a></li>
+                            </li>
+                            <li class="mt-2"><a href="#YouTube-downloader"
+                                    onclick="scrollT('youtube-downloader')">YouTube Downloader</a>
+                                <ul>
+                                    <li><a href="#YT-Overview" onclick="scrollT('overview')">Overview</a></li>
+                                    <li><a href="#YT-Usage" onclick="scrollT('usage')">Usage</a></li>
+                                </ul>
+                            </li>
+                            <li class="mt-2"><a href="#Instagram-downloader"
+                                    onclick="scrollT('instagram-downloader')">Instagram Downloader</a>
+                                <ul>
+                                    <li><a href="#Instagram-Overview" onclick="scrollT('overview-1')">Overview</a></li>
+                                    <li><a href="#Instagram-Usage" onclick="scrollT('usage-1')">Usage</a></li>
+                                </ul>
+                            </li>
+                            <li class="mt-2"><a href="#FAQ" onclick="scrollT('frequently-asked-questions')">Frequently
+                                    Asked Questions</a></li>
+                            <li class="mt-2"><a href="#Support-And-Contact"
+                                    onclick="scrollT('support-and-contact')">Support and Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <h3 class="mt-5">Introduction<a id="introduction"></a></h3>
+                    <p class="mt-2">Welcome to <b><a class="pras" href="/home">PRAS Video Downloader</a></b>, your go-to
+                        destination for downloading videos from
+                        YouTube and
+                        Instagram. Our user-friendly tools make it easy to save your favorite content for offline
+                        viewing.</p>
+
+                    <h3 class="mt-5">Supported Platforms<a id="supported-platforms"></a>
+                    </h3>
+                    <p><b><a class="pras" href="/home">PRAS Video Downloader</a></b> supports all major web browsers,
+                        including Google Chrome, Mozilla
+                        Firefox,
+                        and
+                        Microsoft Edge. Ensure your browser is up to date for the best experience.</p>
+                    <h3 class="mt-5">How to Use<a id="how-to-use"></a></h3>
+                    <div>
+                        <ul style="padding-inline-start: 20px; ">
+                            <li>
+                                <p>Visit <b><a class="pras" href="/home">PRAS Video Downloader</a></b>.</p>
+                            </li>
+                            <li>
+                                <p>Choose the desired tool from the <b><a id="toolboxshortcut" class="pras"
+                                            href="#ToolBox">ToolBox</a></b> - either YouTube Downloader or Instagram
+                                    Reel
+                                    Downloader.</p>
+                            </li>
+                            <li>
+                                <p>Follow the on-screen instructions to paste the video URL and initiate the download.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="mt-5"><a class="toollink" href="/tool/youtube-downloader">YouTube Downloader</a><a
+                            id="youtube-downloader"></a></h3>
+                    <h4 class="mt-3">Overview<a id="overview"></a>
+                    </h4>
+                    <p>Our YouTube Downloader allows you to easily download YouTube videos in various formats and
+                        qualities.
+                        Whether it's a tutorial, music video, or vlog, you can save it for offline viewing.</p>
+                    <h4 class="mt-4">Usage<a id="usage"></a>
+                    </h4>
+                    <div>
+                        <ul style="padding-inline-start: 20px;">
+                            <li>
+                                <p>Copy the URL of the YouTube video you want to download.</p>
+                            </li>
+                            <li>
+                                <p>Paste the URL into the designated field on <b><a class="pras"
+                                            href="/tool/youtube-downloader">PRAS Video
+                                            Downloader</a></b>.</p>
+                            </li>
+                            <li>
+                                <p>Click your preferred format and quality button.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="mt-5">Instagram Downloader<a id="instagram-downloader"></a></h3>
+                    <h4 class="mt-3">Overview<a id="overview-1"></a>
+                    </h4>
+                    <p>Download Instagram Reels effortlessly with our dedicated tool. Save entertaining and informative
+                        content directly to your device for later enjoyment.</p>
+                    <h4 class="mt-4">Usage<a id="usage-1"></a></h4>
+                    <div>
+                        <ul style="padding-inline-start: 20px;">
+                            <li>
+                                <p>Copy the URL of the Instagram Reel you wish to download.</p>
+                            </li>
+                            <li>
+                                <p>Paste the URL into the provided space on <b><a class="pras"
+                                            href="/tool/instagram-downloader">PRAS
+                                            Video Downloader</a></b>.</p>
+                            </li>
+                            <li>
+                                <p>Click on the button to save the Reel to your device.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="mt-5">Frequently Asked Questions<a id="frequently-asked-questions"></a></h3>
+                    <div>
+                        <ul style="padding-inline-start: 20px;">
+                            <li>
+                                <p><b>Q:</b> Is <b>PRAS Video Downloader</b> free to use?</p>
+                                <ul>
+                                    <li class="mt-2">
+                                        <p><b>A:</b> Yes, <b>PRAS Video Downloader</b> is completely free to use.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="mt-3">
+                                <p><b>Q:</b> Can I download videos from <b>PRAS Video Downloader</b> on my mobile
+                                    device?</p>
+                                <ul>
+                                    <li class="mt-2">
+                                        <p> <b>A: PRAS Video Downloader</b> is optimized for every type of device,
+                                            including mobile devices. You can easily download videos using
+                                            your mobile browser without any hassle.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="mt-5">Support and Contact<a id="support-and-contact"></a></h3>
+                    <p class="mb-5">For any inquiries, issues, or feedback, please contact our support team at <b><a
+                                class="pras" href="mailto:prasbusi.nes@gmail.com">prasbusi.nes@gmail.com</a></b></p>
+                </div>
+            </div>
+
+
+            <div id="footer" class="row">
+                <div class="leftside">
+                    <div class="social row">
+                        <h4>Social</h4>
+                        <div class="social-links">
+                            <a target="_blank" href="https://www.instagram.com/imprassamin/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="https://twitter.com/prassamin78"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/imprassamin"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a target="_blank" href="https://github.com/PRASSamin"><i class="fa-brands fa-github"></i>
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/pras-samin-826421270/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a target="_blank"
+                                href="https://discord.com/channels/900721465584939049/1202040477243670558"><i
+                                    class="fa-brands fa-discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="row tools-xy3600002">
+                        <h4>Tools</h4>
+                        <div class="toolbtn">
+                            <a href="/tool/youtube-downloader" class="ytbtn">Youtube</a>
+                            <a href="/tool/instagram-downloader" class="instabtn">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightside">
+                    <a href="/home"><img src="/img/logo.png" alt="PRAS Downloader Logo"></a>
+                    <p>© 2024 By <a target="_blank" href="https://github.com/PRASSamin"><b>PRAS</b></a>.<br>All Rights
+                        Reserved.</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div id="download-animation" style="display: none;"></div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/homescript.js"></script>
+    <script src="/js/webbg.js"></script>
+    <script src="/js/mobile.js"></script>
+</body>
+
+</html>
