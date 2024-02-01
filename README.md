@@ -18,11 +18,10 @@ A website that lets you download Instagram videos easily and quickly. You can pa
 
 **1.** Cloning the repository:
 
-----------
-bash
-----------
-
+```bash
 git clone https://github.com/riad-azz/instagram-video-downloader.git
+```
+
 
 
 
