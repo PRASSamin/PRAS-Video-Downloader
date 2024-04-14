@@ -313,10 +313,6 @@ function writeToJsonYT(data) {
   }
 }
 
-
-
-
-
 app.post("/submit", async (req, res) => {
   try {
     const { url } = req.body;
